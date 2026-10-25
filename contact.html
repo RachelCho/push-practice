@@ -4,11 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 72px 24px;
+      background-color: #ffffff;
+      color: #333333;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      word-break: keep-all;
+    }
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0 0 48px;
+      font-size: 28px;
+      line-height: 1.4;
+      color: #1f2a5a;
+    }
+    p {
+      margin: 0 0 32px;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 24px;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e5e5;
+    }
+    a {
+      color: #1f2a5a;
+      text-decoration: none;
+      border-bottom: 1px solid #1f2a5a;
+    }
+    a:hover {
+      opacity: 0.7;
+    }
+    @media (max-width: 480px) {
+      body {
+        padding: 48px 20px;
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>이곳은 연락처 페이지입니다</h1>
-  <p>연락처: example@email.com</p>
-  <a href="index.html">메인으로 돌아가기</a>
-  <a href="about.html">About 페이지로 가기</a>
+  <main>
+    <h1>이곳은 연락처 페이지입니다</h1>
+    <p>연락처: example@email.com</p>
+    <nav>
+      <a href="index.html">메인으로 돌아가기</a>
+      <a href="about.html">About 페이지로 가기</a>
+    </nav>
+  </main>
 </body>
 </html>

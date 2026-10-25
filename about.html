@@ -4,20 +4,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 72px 24px;
+      background-color: #ffffff;
+      color: #333333;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      word-break: keep-all;
+    }
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0 0 48px;
+      font-size: 28px;
+      line-height: 1.4;
+      color: #1f2a5a;
+    }
+    h2 {
+      margin: 0 0 4px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: #1f2a5a;
+    }
+    p {
+      margin: 0 0 32px;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 24px;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e5e5;
+    }
+    a {
+      color: #1f2a5a;
+      text-decoration: none;
+      border-bottom: 1px solid #1f2a5a;
+    }
+    a:hover {
+      opacity: 0.7;
+    }
+    @media (max-width: 480px) {
+      body {
+        padding: 48px 20px;
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>이곳은 About 페이지입니다</h1>
+  <main>
+    <h1>이곳은 About 페이지입니다</h1>
 
-  <h2>이름</h2>
-  <p>Rachel Cho</p>
+    <h2>이름</h2>
+    <p>Rachel Cho</p>
 
-  <h2>하는 일</h2>
-  <p>UX·프로덕트 디자이너</p>
+    <h2>하는 일</h2>
+    <p>UX·프로덕트 디자이너</p>
 
-  <h2>관심 분야</h2>
-  <p>AI, 웹서비스 제작, 사용자 경험</p>
+    <h2>관심 분야</h2>
+    <p>AI, 웹서비스 제작, 사용자 경험</p>
 
-  <a href="index.html">메인으로 돌아가기</a>
-  <a href="contact.html">연락처 페이지로 가기</a>
+    <nav>
+      <a href="index.html">메인으로 돌아가기</a>
+      <a href="contact.html">연락처 페이지로 가기</a>
+    </nav>
+  </main>
 </body>
 </html>
