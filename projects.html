@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background-color: #ffffff;
+      color: #333333;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      word-break: keep-all;
+    }
+    .site-header {
+      background-color: #1f2a5a;
+    }
+    .site-header nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 28px;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 20px 24px;
+    }
+    .site-header a {
+      color: #ffffff;
+      text-decoration: none;
+      opacity: 0.75;
+    }
+    .site-header a:hover {
+      opacity: 1;
+    }
+    .site-header a[aria-current="page"] {
+      font-weight: 700;
+      opacity: 1;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 72px 24px;
+    }
+    h1 {
+      margin: 0 0 48px;
+      font-size: 28px;
+      line-height: 1.4;
+      color: #1f2a5a;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .card {
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .card-image {
+      aspect-ratio: 4 / 3;
+      background-color: #d9d9d9;
+    }
+    .card-body {
+      padding: 20px;
+    }
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      line-height: 1.4;
+      color: #1f2a5a;
+    }
+    .card p {
+      margin: 0;
+      font-size: 15px;
+    }
+    .site-footer {
+      border-top: 1px solid #e5e5e5;
+    }
+    .site-footer p {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px;
+      font-size: 14px;
+      color: #666666;
+    }
+    @media (max-width: 600px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 480px) {
+      body {
+        font-size: 16px;
+      }
+      .site-header nav {
+        gap: 8px 20px;
+        padding: 16px 20px;
+      }
+      main {
+        padding: 48px 20px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      .site-footer p {
+        padding: 24px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>프로젝트</h1>
+
+    <ul class="cards">
+      <li class="card">
+        <div class="card-image"></div>
+        <div class="card-body">
+          <h2>브랜드 로고 디자인</h2>
+          <p>동네 카페 로고를 만들어보고 싶어요.</p>
+        </div>
+      </li>
+      <li class="card">
+        <div class="card-image"></div>
+        <div class="card-body">
+          <h2>포스터 디자인</h2>
+          <p>좋아하는 영화 포스터 다시 그리기.</p>
+        </div>
+      </li>
+      <li class="card">
+        <div class="card-image"></div>
+        <div class="card-body">
+          <h2>웹사이트</h2>
+          <p>지금 만들고 있는 이 사이트.</p>
+        </div>
+      </li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Rachel Cho</p>
+  </footer>
+</body>
+</html>

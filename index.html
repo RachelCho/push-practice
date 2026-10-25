@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rachel의 연습 사이트</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
-      padding: 72px 24px;
       background-color: #ffffff;
       color: #333333;
       font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
@@ -15,49 +17,86 @@
       line-height: 1.7;
       word-break: keep-all;
     }
-    main {
-      max-width: 640px;
+    .site-header {
+      background-color: #1f2a5a;
+    }
+    .site-header nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 28px;
+      max-width: 720px;
       margin: 0 auto;
+      padding: 20px 24px;
+    }
+    .site-header a {
+      color: #ffffff;
+      text-decoration: none;
+      opacity: 0.75;
+    }
+    .site-header a:hover {
+      opacity: 1;
+    }
+    .site-header a[aria-current="page"] {
+      font-weight: 700;
+      opacity: 1;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 72px 24px;
     }
     h1 {
-      margin: 0 0 48px;
+      margin: 0 0 24px;
       font-size: 28px;
       line-height: 1.4;
       color: #1f2a5a;
     }
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px 24px;
-      padding-top: 24px;
+    .site-footer {
       border-top: 1px solid #e5e5e5;
     }
-    a {
-      color: #1f2a5a;
-      text-decoration: none;
-      border-bottom: 1px solid #1f2a5a;
-    }
-    a:hover {
-      opacity: 0.7;
+    .site-footer p {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px;
+      font-size: 14px;
+      color: #666666;
     }
     @media (max-width: 480px) {
       body {
-        padding: 48px 20px;
         font-size: 16px;
+      }
+      .site-header nav {
+        gap: 8px 20px;
+        padding: 16px 20px;
+      }
+      main {
+        padding: 48px 20px;
       }
       h1 {
         font-size: 24px;
+      }
+      .site-footer p {
+        padding: 24px 20px;
       }
     }
   </style>
 </head>
 <body>
+  <header class="site-header">
+    <nav>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
   <main>
     <h1>안녕하세요, Rachel의 연습 사이트입니다</h1>
-    <nav>
-      <a href="about.html">About 페이지로 가기</a>
-      <a href="contact.html">연락처 페이지로 가기</a>
-    </nav>
   </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Rachel Cho</p>
+  </footer>
 </body>
 </html>
